@@ -1,0 +1,54 @@
+.main_form{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+/* MEDIA QUERY PARA QUE EL FORM DE CONTACTO SE MUESTRE OCUPANDO TODO EL ANCHO EN PANTALLA MOBILE */
+@media (min-width: 576px){
+    .main_form{
+        width: 70%;
+    }
+}
+
+.main_titulo-principal{
+    color: #001d61;
+    font-family: "Inter Tight", sans-serif;
+    size: 64px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main_contactoGrid{
+    font-size: small;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    align-content:start;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+
+}
+
+.main_contactoGrid li{
+    text-align: center;
+    justify-items: center;
+    grid-column: auto;
+}
+
+@media (min-width: 576px){
+    .main_contactoGrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+.main_texto-descriptivo{
+    color: #686868;
+    size: 20px;
+    text-align: center;
+}
