@@ -27,6 +27,11 @@ $secondary-text-color: #686868;
     text-align: center;
 }
 
+.main_titulo-secundario {
+    @extend .main_titulo-principal;
+    margin-top: 100px;
+    padding: 20px
+}
 
 .main_contactoGrid {
     font-size: small;
@@ -37,8 +42,9 @@ $secondary-text-color: #686868;
     padding: 0;
     margin: 0;
     gap: 1rem;
-
+    
     li{ 
+        list-style: none;
         text-align: center;
         justify-items: center;
         grid-column: auto;
@@ -59,4 +65,16 @@ $secondary-text-color: #686868;
     color: $secondary-text-color;
     size: 20px;
     text-align: center;
+}
+
+
+.card-services{
+    display: inline;
+    align-content: end;
+    justify-self: center;
+}
+
+.img-logo {
+    width: 150px; 
+    height: auto;
 }

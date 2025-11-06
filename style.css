@@ -12,12 +12,17 @@
     width: 70%;
   }
 }
-.main_titulo-principal {
+.main_titulo-principal, .main_titulo-secundario {
   color: #001d61;
   font-family: "Inter Tight", sans-serif;
   size: 64px;
   font-weight: bold;
   text-align: center;
+}
+
+.main_titulo-secundario {
+  margin-top: 100px;
+  padding: 20px;
 }
 
 .main_contactoGrid {
@@ -31,6 +36,7 @@
   gap: 1rem;
 }
 .main_contactoGrid li {
+  list-style: none;
   text-align: center;
   justify-items: center;
   grid-column: auto;
@@ -45,6 +51,17 @@
   color: #686868;
   size: 20px;
   text-align: center;
+}
+
+.card-services {
+  display: inline;
+  align-content: end;
+  justify-self: center;
+}
+
+.img-logo {
+  width: 150px;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
