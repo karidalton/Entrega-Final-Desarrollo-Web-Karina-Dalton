@@ -70,10 +70,12 @@ $secondary-text-color: #686868;
 
 
 .card-services{
-    display: inline;
-    align-content: end;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
+
+// La imagen principal tiene width: 150px; height: auto;, que funciona, pero podrías usar la clase img-fluid y controlar el tamaño en CSS para mantener la
 
 .img-logo {
     width: 150px; 
